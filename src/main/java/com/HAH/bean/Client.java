@@ -4,8 +4,8 @@ public class Client {
 
 	private MyService myService;
 
-	public Client() {
-		myService = new MyService();
+	public Client(MyService myService) {
+		this.myService = myService;
 	}
 
 	public void ClientWork() {

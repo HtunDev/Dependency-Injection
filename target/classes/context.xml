@@ -9,7 +9,9 @@
         http://www.springframework.org/schema/mvc http://www.springframework.org/schema/mvc/spring-mvc.xsd">
 
 	<!-- bean definitions here -->
-	<bean id="client" class="com.HAH.bean.Client"></bean>
+	<bean id="client" class="com.HAH.bean.Client">
+		<constructor-arg ref="custom"></constructor-arg>
+	</bean>
 	
 	<bean id="custom" class="com.HAH.bean.CustomService"></bean>
 	
