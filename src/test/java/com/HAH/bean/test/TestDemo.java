@@ -5,8 +5,9 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.test.context.junit.jupiter.SpringJUnitConfig;
 
 import com.HAH.bean.Client;
+import com.HAH.bean.Configuration.MyConfig;
 
-@SpringJUnitConfig(locations = "classpath:context.xml")
+@SpringJUnitConfig(classes = MyConfig.class)
 public class TestDemo {
 	
 	@Autowired
