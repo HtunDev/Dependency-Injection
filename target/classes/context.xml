@@ -9,8 +9,6 @@
         http://www.springframework.org/schema/mvc http://www.springframework.org/schema/mvc/spring-mvc.xsd">
 
 	<!-- bean definitions here -->
-	<bean id="myService" class="com.HAH.bean.MyService"></bean>
-	
-	<bean id="client" class="com.HAH.bean.Client" autowire="byType"></bean>
+	<context:component-scan base-package="com.HAH.bean"></context:component-scan>
 
 </beans>
