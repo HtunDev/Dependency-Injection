@@ -4,7 +4,7 @@ public class Client {
 
 	private MyService myService;
 
-	public Client(MyService myService) {
+	public void setMyService(MyService myService) {
 		this.myService = myService;
 	}
 

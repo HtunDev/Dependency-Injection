@@ -10,7 +10,7 @@
 
 	<!-- bean definitions here -->
 	<bean id="client" class="com.HAH.bean.Client">
-		<constructor-arg ref="custom"></constructor-arg>
+		<property name="myService" ref="custom"></property>
 	</bean>
 	
 	<bean id="custom" class="com.HAH.bean.CustomService"></bean>
