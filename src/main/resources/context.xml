@@ -9,14 +9,12 @@
         http://www.springframework.org/schema/mvc http://www.springframework.org/schema/mvc/spring-mvc.xsd">
 
 	<!-- bean definitions here -->
-	<bean id="client" factory-method="generate" factory-bean="factory">
-		<constructor-arg ref="myservice"></constructor-arg>
-	</bean>
-	
 	<bean id="myservice" class="com.HAH.bean.MyService"></bean>
+	
+	<!-- <bean id="custom" class="com.HAH.bean.CustomService"></bean> -->
 	
 	<bean id="factory" class="com.HAH.bean.Factory"></bean>
 	
-	<bean id="custom" class="com.HAH.bean.CustomService"></bean>
+	<bean id="client" factory-method="generate" factory-bean="factory" autowire="constructor"></bean>
 
 </beans>
